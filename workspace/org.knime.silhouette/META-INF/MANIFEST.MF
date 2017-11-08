@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Silhouette Node
+Bundle-SymbolicName: org.knime.silhouette;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: org.knime.silhouette.SilhouetteNodeNodePlugin
+Bundle-Vendor: KNIME.com
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base,
+ org.apache.commons.compress;bundle-version="1.12.0",
+ org.apache.commons.lang3;bundle-version="3.2.1",
+ org.apache.commons.math3;bundle-version="3.4.1",
+ org.tukaani.xz;bundle-version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Export-Package: org.knime.silhouette
+Bundle-ClassPath: lib/avro-1.7.7.jar,
+ lib/commons-compiler-2.7.4.jar,
+ lib/ejml-0.24.jar,
+ lib/hadrian-0.8.4.jar,
+ lib/jackson-core-asl-1.9.13.jar,
+ lib/jackson-mapper-asl-1.9.13.jar,
+ lib/janino-2.7.4.jar,
+ lib/jcodings-1.0.8.jar,
+ lib/joda-convert-1.7.jar,
+ lib/joni-2.1.4.jar,
+ lib/kdtree_2.10-1.0.3.jar,
+ lib/paranamer-2.3.jar,
+ lib/scala-library-2.10.4.jar,
+ lib/snakeyaml-1.13.jar,
+ lib/snappy-java-1.0.5.jar,
+ .
+

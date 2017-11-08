@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./default.png" type="Other" xmlns="http://knime.org/node/v2.8"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>Silhouette Coefficient</name>
+    
+    <shortDescription>
+        This is Silhouette (clustering) node provided by KNIME.com.
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>Silhouette refers to a method of interpretation and validation of consistency within clusters of data. The technique provides a succinct numerical representation of how well each object lies within its cluster.
+			   The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.
+			   If most objects have a high value, then the clustering configuration is appropriate. If many points have a low or negative value, then the clustering configuration may have too many or too few clusters.
+			   In this implementation the silhouette is calculated with the Euclidean distance.
+			   For more information: <a href="https://en.wikipedia.org/wiki/Silhouette_(clustering)">Wikipedia Silhouette (Clustering)</a></intro>
+        
+        
+        <option name="Cluster Column">Select the cluster column containing the clusters. Only 1 cluster column should be selected.</option>
+        <option name="Data Columns Selection">Select the data columns data are going to be used in Silhouette implementation.</option>
+        <!-- possibly more options that can also be grouped by tabs -->
+        <!--
+        <tab name="Standard Options">
+            <option name="short name of first option (like in the dialog)">description of first option</option>
+            <option name="short name of second option (like in the dialog)">description of second option</option>
+        </tab>
+        <tab name="Advanced Options">
+            <option name="short name of first advanced option (like in the dialog)">description of first advanced option</option>
+        </tab>
+        -->
+    </fullDescription>
+    
+    <ports>
+        <inPort index="0" name="Input Port">Datatable to be processed for Silhouette.</inPort>
+        <!-- possibly more input ports here-->
+        <outPort index="0" name="Output Port">Datatable with Silhouette Coefficient</outPort>
+        <!-- possibly more output ports here-->
+    </ports>    
+</knimeNode>
